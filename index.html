@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" @click="view = v-b">About</a></li>
+        </ul>
+
+        <div style="margin-left:25%;padding:1px 16px;height:1000px;">
+            <h2>This is a Home Page</h2>
+            <h3>Using CSS, Javascript and Vue.js</h3>
+            <p>Simple animations that engage the end user and stimulate their minds are now possible</p>
+            <p>Keeping websites slick, professional and engaging.</p>
+            <p>Some text..</p>
+            <p>Some text..</p>
+            <p>Some text..</p>
+            <p>Some text..</p>
+            <p>Some text..</p>
+            <p>Some text..</p>
+            <p>Some text..</p>
+
+            <div id="demo">
+                <button v-on:click="show = !show">
+                    Toggle
+                </button>
+                <transition name="fade">
+                    <p v-if="show">hello</p>
+                </transition>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
