@@ -1,6 +1,6 @@
-new Vue({
-    el: '#demo',
-    data: {
-      show: true
-    }
-  })
+var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
