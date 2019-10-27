@@ -3,8 +3,9 @@ body {
   }
 
   #content {
-    margin-left:25%;
+    margin-left:20%;
     padding:1px 16px;
+    padding-top: 10%;
     height:1000px;
   }
 
@@ -12,7 +13,8 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 25%;
+    padding-top: 10%;
+    width: 20%;
     background-color: #f1f1f1;
     position: fixed;
     height: 100%;

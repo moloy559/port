@@ -6,16 +6,16 @@ new Vue({
   },
   components: {
     'v-a': {
-      template: "<div> <h2>This is a Home Page</h2> </div>"
+      template: "<div> <h2>This is a Home Page.</h2> </div>"
     },
     'v-b': {
-      template: '<div><h2>Using CSS, Javascript and Vue.js</h2></div>'
+      template: '<div><h2>Using CSS, Javascript and Vue.js.</h2></div>'
     },
     'v-c': {
-      template: '<div><h2>Simple animations that engage the end user are now possible</h2></div>'
+      template: '<div><h2>Simple animations that engage the <br/> enduser are now possible.</h2></div>'
     },
     'v-d': {
-      template: '<div><h2>Making websites slick, professional and engaging.</h2></div>'
+      template: '<div><h2>Making websites slick, professional <br/>  and engaging.</h2></div>'
     }
   },
   methods:{
