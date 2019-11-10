@@ -18,7 +18,7 @@
         <div id="side-bar">
             <ul>
                 <li><button @click="turnA">Home</a></li>
-                <li><button @click="turnB">About</a></li>
+                <li><button @click="turnB">Demo Reel</a></li>
                 <li><button @click="turnC">News</a></li>
                 <li><button @click="turnD">Contact</a></li>
             </ul>
@@ -31,8 +31,9 @@
             </transition>
 
             <div id="bot-nav">
-                <button id="a-left" class="fas fa-angle-left"></button>
-                <button id="a-right" class="fas fa-angle-right"></button>
+                <p>{{page_num}} / {{max_page_num}}</p>
+                <button @click="prevPage" id="a-left" class="fas fa-angle-left"></button>
+                <button @click="nextPage" id="a-right" class="fas fa-angle-right"></button>
             </div>
         </div>
 
