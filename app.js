@@ -15,7 +15,7 @@ Vue.component('button-intro', {
   <transition name="some-fade" mode="out-in" > \
   <p  v-if="count==0" key="key1">This is a line of text. </p>\
   <p  v-if="count==1" key="key2">Using CSS, Javascript and Vue.js </p>\
-  <p  v-if="count==2" key="key3">Simple animations that engage the end user are now possible</p>\
+  <p  v-if="count==2" key="key3">Simple animations that transform page elements are now possible</p>\
   <p  v-if="count==3" key="key4">Making websites slick, professional and engaging.</p>\
   </transition> \
   </div> \
@@ -54,7 +54,7 @@ new Vue({
                   portfolio.</p> \
                   <p> Try clicking this button a few times.</p> \
                   <button-intro></button-intro>\
-                  <p>Using the arrow buttons below will navigate to the next page of my portfolio. Use the navigation bar to jump to certain projects</p>\
+                  <p>Using the arrow buttons below will navigate to the next page of my portfolio. Use the navigation bar to jump to a specific page instead</p>\
           </div> \
       </div> \
   </div>'
@@ -71,10 +71,40 @@ new Vue({
       </div>'
     },
     'v-c': {
-      template: '<div><h2>Simple animations that engage the end user are now possible</h2></div>'
+      template: '<div class="frame"> \
+      <h2 class="title">Skills</h2> \
+      <div class="grid-container"> \
+          <ul class="item-1"> \
+              <li>HTML</li> \
+              <li>CSS</li> \
+              <li>Javascript</li> \
+              <li>Vue.JS</li> \
+              <li>Adobe Creative Suite</li> \
+              <li>Unity3D</li> \
+              <li>Create.JS</li> \
+              <li>C#</li> \
+              <li>XML</li> \
+          </ul> \
+          <ul class="item-2"> \
+              <li>WordPress</li> \
+              <li>Bootstrap</li> \
+              <li>Java</li> \
+              <li>PHP</li> \
+              <li>Git</li> \
+              <li>Gamemaker Studio 2</li> \
+              <li>Server Hosting</li> \
+              <li>SQL</li> \
+              <li>More...</li> \
+          </ul> \
+      </div> \
+  </div>'
     },
     'v-d': {
-      template: '<div><h2>Making websites slick, professional and engaging.</h2></div>'
+      template: '<div class="frame"> \
+      <h2>Contact</h2> \
+      <h3>msissons@confederationcollege.ca</h3> \
+      <h3>(807)632-5509</h3> \
+     </div>'
     }
   },
   methods: {

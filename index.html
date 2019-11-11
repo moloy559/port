@@ -14,12 +14,12 @@
 </head>
 
 <body>
-    <div id="wrapper" >
+    <div id="wrapper">
         <div id="side-bar">
             <ul>
                 <li><button @click="turnA">Home</a></li>
                 <li><button @click="turnB">Demo Reel</a></li>
-                <li><button @click="turnC">Canvas Games</a></li>
+                <li><button @click="turnC">Skills</a></li>
                 <li><button @click="turnD">Contact</a></li>
             </ul>
         </div>
@@ -29,8 +29,39 @@
             <transition name="component-fade" mode="out-in">
                 <component v-bind:is="view"></component>
             </transition>
+            <!--div class="frame">
+                <h2 class="title">Skills</h2>
+                <div class="grid-container">
+                    <ul class="item-1">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Vue.JS</li>
+                        <li>Adobe Creative Suite</li>
+                        <li>Unity3D</li>
+                        <li>Create.JS</li>
+                        <li>C#</li>
+                        <li>XML</li>
+                    </ul>
+                    <ul class="item-2">
+                        <li>WordPress</li>
+                        <li>Bootstrap</li>
+                        <li>Java</li>
+                        <li>PHP</li>
+                        <li>Git</li>
+                        <li>Gamemaker Studio 2</li>
+                        <li>Server Hosting</li>
+                        <li>SQL</li>
+                        <li>More...</li>
+                    </ul>
+                </div>
+            </div-->
 
-            
+            <!--div class="frame">
+                <h2>Contact</h2>
+                <h3>msissons@confederationcollege.ca</h3>
+                <h3>(807)632-5509</h3>
+            </div-->
 
             <div id="bot-nav">
                 <p>{{page_num}} / {{max_page_num}}</p>

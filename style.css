@@ -21,6 +21,17 @@ body {
   margin: 1em;
   }
 
+  .item-1{ grid-area: left}
+  .item-2{ grid-area: right}
+  .grid-container {
+    display: grid;
+    grid-template-areas: 'left right';
+  }
+
+  .grid-container li {
+    font-size: 1.2em;
+  }
+
 .button-intro p{
   font-size: 1.5em;
   font-family: 'Open Sans', sans-serif;
@@ -68,7 +79,7 @@ body {
     background-color: #363D3F;
   }
 
-  ul {
+  #side-bar ul {
     list-style-type: none;
     margin: 0;
     padding: 50% 0% 0%;
