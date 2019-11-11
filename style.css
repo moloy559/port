@@ -13,9 +13,34 @@ body {
     font-family: 'Open Sans', sans-serif;
   }
 
-  #content h2{
+  #content .title{
     text-align: center;
   }
+
+  .frame{
+  margin: 1em;
+  }
+
+.button-intro p{
+  font-size: 2em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+  @media only screen and (min-width: 1000px){
+    .frame .txt-box{
+      width: 75%;
+    }
+  }
+ 
+  
+  .txt-btn{
+    color: black;
+    padding: 12px;
+    border: none;
+    background-color: rgb(204, 213, 216);
+    font-size: 1em;
+  }
+
   .demoHolder{
     margin: 0 auto;
     max-width: 75%;
@@ -27,6 +52,7 @@ body {
     padding-top: 25px;
     height: 0;
   }
+
   .videoWrapper iframe {
     position: absolute;
     top: 0;
@@ -119,4 +145,13 @@ margin-left: 37.5%;
 /* .component-fade-leave-active below version 2.1.8 */ {
   opacity: 0;
   transform: translateX(10px);
+}
+
+.some-fade-enter-active, .some-fade-leave-active {
+  transition: all .6s ease-out;
+}
+.some-fade-enter, .some-fade-leave-to
+/* .component-fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateX(20px);
 }

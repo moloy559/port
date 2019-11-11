@@ -14,12 +14,12 @@
 </head>
 
 <body>
-    <div id="wrapper">
+    <div id="wrapper" >
         <div id="side-bar">
             <ul>
                 <li><button @click="turnA">Home</a></li>
                 <li><button @click="turnB">Demo Reel</a></li>
-                <li><button @click="turnC">News</a></li>
+                <li><button @click="turnC">Canvas Games</a></li>
                 <li><button @click="turnD">Contact</a></li>
             </ul>
         </div>
@@ -29,6 +29,8 @@
             <transition name="component-fade" mode="out-in">
                 <component v-bind:is="view"></component>
             </transition>
+
+            
 
             <div id="bot-nav">
                 <p>{{page_num}} / {{max_page_num}}</p>
