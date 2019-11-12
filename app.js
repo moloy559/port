@@ -50,8 +50,6 @@ new Vue({
               <p>I am an application developer and designer that specializes in code. \
                   This website was made to display my abilities to provide technical \
                   solutions that enhance the design aspects within web and software applications. </p> \
-              <p> As a designer that specialises in code, my portfolio itself gets to be a part of my \
-                  portfolio.</p> \
                   <p> Try clicking this button a few times.</p> \
                   <button-intro></button-intro>\
                   <p>Using the arrow buttons below will navigate to the next page of my portfolio. Use the navigation bar to jump to a specific page instead</p>\
