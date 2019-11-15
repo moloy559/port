@@ -3,6 +3,15 @@ body {
     font-size: 100%;
   }
 
+  h2 {
+    font-size: 3em;
+    padding: 0;
+    margin: 0em 0em;
+    color: #2f2f63;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+  }
+
   #content {
     position: fixed;
     margin-left:25%;
@@ -27,22 +36,53 @@ body {
     display: grid;
     grid-template-areas: 'left right';
   }
+  
+  .project-title{
+    grid-area: top;
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+  }
+  .project-image{grid-area: left}
+  .project-description{
+    grid-area: right;
+    padding: 0em 0em 0em 1em;
+  }
+  .grid-project{
+    display: grid;
+    grid-template-areas: 'top top top'
+    'left left right'
+    'left left right';
+  }
+
+  .project-title h3{
+    margin: 0;
+  }
+
+  #skills-grid{
+    margin: 0em 2em;
+  }
 
   .grid-container li {
     font-size: 1.2em;
   }
 
-.button-intro p{
+  .button-intro{
+    background-color: rgb(234, 238, 238);
+    padding: 1em 1em 1em 1em;
+  }
+
+  .button-intro p{
   font-size: 1.5em;
   font-family: 'Open Sans', sans-serif;
-}
+  margin: 1em 0em 0em 0em;
+  }
 
   @media only screen and (min-width: 1000px){
-    .frame .txt-box{
+    .frame {
       width: 75%;
     }
   }
- 
   
   .txt-btn{
     color: black;
@@ -52,9 +92,14 @@ body {
     font-size: 1em;
   }
 
+  .txt-btn:hover{
+    background-color: #AFBFBF;
+  }
+
   .demoHolder{
     margin: 0 auto;
     max-width: 75%;
+    background-color: black;
   }
 
   .videoWrapper {
@@ -122,10 +167,12 @@ body {
   #bot-nav p {
     position: fixed;
     bottom: 2em;
-    left: 62.5%;
+    padding: 0.3em;
+    left: 61.5%;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
     font-size: 1em;
+    background-color: white;
   }
 
   #bot-nav button {

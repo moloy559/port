@@ -1,13 +1,8 @@
-var introStrings = [
-  "first", "second", "third"
-]
-
 Vue.component('button-intro', {
   data: function () {
     return {
       count: 0,
       intro_btn_num: 0,
-      intro_content: introStrings[0],
     }
   },
   template: ' <div class="button-intro"> \
@@ -23,13 +18,6 @@ Vue.component('button-intro', {
   methods: {
     introBtn() {
       if (this.count == 3) this.count = 0; else this.count++;
-      /*
-      if(this.intro_btn_num == introStrings.length - 1){
-        this.intro_btn_num = 0;
-      }else{
-        this.intro_btn_num++;
-      }
-      this.intro_content = introStrings[this.intro_btn_num]; */
     }
   }
 })
@@ -45,7 +33,7 @@ new Vue({
     'v-a': {
       template: '<div> \
       <div class="frame"> \
-          <h2>Michael Sissons Portfolio</h2> \
+          <h2>MICHAEL SISSONS PORTFOLIO</h2> \
           <div class="txt-box"> \
               <p>I am an application developer and designer that specializes in code. \
                   This website was made to display my abilities to provide technical \
@@ -58,7 +46,7 @@ new Vue({
   </div>'
     },
     'v-b': {
-      template: '<div><h2 class="title">Demo Reel</h2> \
+      template: '<div><h2 class="title">DEMO REEL</h2> \
       <div class="demoHolder">\
       <div class="videoWrapper">\
       <iframe  width="1903" height="768" src="https://www.youtube.com/embed/MqbYFTkyW9Y" \
@@ -70,8 +58,8 @@ new Vue({
     },
     'v-c': {
       template: '<div class="frame"> \
-      <h2 class="title">Skills</h2> \
-      <div class="grid-container"> \
+      <h2 class="title">SKILLS</h2> \
+      <div class="grid-container" id="skills-grid"> \
           <ul class="item-1"> \
               <li>HTML</li> \
               <li>CSS</li> \
@@ -99,7 +87,7 @@ new Vue({
     },
     'v-d': {
       template: '<div class="frame"> \
-      <h2>Contact</h2> \
+      <h2>CONTACT</h2> \
       <h3>msissons@confederationcollege.ca</h3> \
       <h3>(807)632-5509</h3> \
      </div>'
