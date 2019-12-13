@@ -99,7 +99,7 @@ new Vue({
               <h2>Alpha Space</h2> \
           </div> \
           <div class="project-image"> \
-              <img src="images/alpha-space.jpg">< \
+              <img src="images/alpha-space.jpg" alt="An image of a video game spaceship flying over a planet">< \
           </div> \
           <div class="project-description"> \
               <p>A solo project made in Unity, coded in Visual Studio Comunity 2019.</p> \
