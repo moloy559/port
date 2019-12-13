@@ -27,7 +27,7 @@ new Vue({
   data: {
     view: 'v-a',
     page_num: 1,
-    max_page_num: 4
+    max_page_num: 5
   },
   components: {
     'v-a': {
@@ -46,7 +46,7 @@ new Vue({
   </div>'
     },
     'v-b': {
-      template: '<div><h2 class="title">DEMO REEL</h2> \
+      template: '<div class="frame"><h2 class="title">DEMO REEL</h2> \
       <div class="demoHolder">\
       <div class="videoWrapper">\
       <iframe  width="1903" height="768" src="https://www.youtube.com/embed/MqbYFTkyW9Y" \
@@ -91,6 +91,23 @@ new Vue({
       <h3>msissons@confederationcollege.ca</h3> \
       <h3>(807)632-5509</h3> \
      </div>'
+    },
+    'v-f': {
+      template: '<div class="frame"> \
+      <div class="grid-project"> \
+          <div class="project-title title"> \
+              <h2>Alpha Space</h2> \
+          </div> \
+          <div class="project-image"> \
+              <img src="images/alpha-space.jpg">< \
+          </div> \
+          <div class="project-description"> \
+              <p>A solo project made in Unity, coded in Visual Studio Comunity 2019.</p> \
+              <p>Alpha Space is a game that allows users to build shpace ships and fly them.</p> \
+              <p>The project took 20 hours of work to complete and features Modular and easy to expand code.</p> \
+          </div> \
+      </div> \
+  </div>'
     }
   },
   methods: {
@@ -108,6 +125,10 @@ new Vue({
     },
     turnD() {
       if (this.view != 'v-d') this.view = 'v-d';
+      this.page_num = 5;
+    },
+    turnF() {
+      if (this.view != 'v-f') this.view = 'v-f';
       this.page_num = 4;
     },
     prevPage() {
@@ -124,8 +145,11 @@ new Vue({
           case 3:
             if (this.view != 'v-c') this.view = 'v-c';
             break;
-          case 4:
+          case 5:
             if (this.view != 'v-d') this.view = 'v-d';
+            break;
+          case 4:
+            if (this.view != 'v-f') this.view = 'v-f';
             break;
         }
       }
@@ -143,8 +167,11 @@ new Vue({
           case 3:
             if (this.view != 'v-c') this.view = 'v-c';
             break;
-          case 4:
+          case 5:
             if (this.view != 'v-d') this.view = 'v-d';
+            break;
+          case 4:
+            if (this.view != 'v-f') this.view = 'v-f';
             break;
         }
       }
